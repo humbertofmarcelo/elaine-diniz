@@ -1,0 +1,166 @@
+{
+  "modelo": "silvia-leticia",
+  "hero": {
+    "variante": "overlay",
+    "mobile": {
+      "fundo": "light",
+      "gradiente": "dark",
+      "tema_texto": "light"
+    }
+  },
+  "paleta": "salvia",
+  "nome": "Elaine Diniz",
+  "profissao": "Psicóloga",
+  "crp": "06/208762",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "bairro": "",
+  "endereco": "",
+  "email": "",
+  "abordagem": "Fenomenologia Existencial",
+  "modalidade": [
+    "presencial",
+    "online"
+  ],
+  "titulo_hero": "Psicóloga Elaine Diniz",
+  "subtitulo_hero": "A vida exige travessia, espaço e tempo. O essencial não tem pressa.",
+  "frase_acolhimento": "Se você procura um refúgio para parar de correr e olhar para dentro com cuidado, sinta-se em casa.",
+  "bio": "Como psicóloga clínica, o meu compromisso não é te dar respostas prontas, mas construir com você um solo seguro onde a sua dor possa ser acolhida na inteireza, sem pressa e sem fórmulas vazias.",
+  "bio_complementar": "Trabalho com a Fenomenologia Existencial. Em tradução simples: aqui, o foco não é te encaixar em caixinhas, mas olhar para a sua experiência, do seu jeito.",
+  "bio_complementar_2": "A psicoterapia é o espaço ético de escuta e rigor clínico para investigar os seus modos de se relacionar e reencontrar a sua autonomia.",
+  "bio_complementar_3": "Se você sente que é o seu momento de iniciar um processo terapêutico com profundidade e respeito ao seu ritmo, agende uma sessão.",
+  "descricao_seo": "Elaine Diniz - Psicóloga Clínica (CRP 06/208762). Terapia Online em São Paulo. Agende um atendimento.",
+  "demandas_titulo": "Por que psicanálise?",
+  "demandas_subtitulo": "É necessário recordar, repetir e elaborar",
+  "demandas": [
+    "A psicanálise inaugurou a ideia de que existe um tipo de sofrimento humano que só pode ser enfrentado através da fala e da escuta. Em uma cultura onde o desarranjo psíquico define nossa contemporaneidade, o mundo implora por um saber humano, simbólico e profundamente empático. O mundo precisa de terapia e dos insights da psicanálise.",
+    "Psicanálise pra mim, por mim e em mim. Na busca-descoberta por mim mesmo nos confins do inconsciente. Por uma jornada de autoconhecimento, mas ciente que as dores e as delícias da vida vão pintar por aí."
+  ],
+  "demandas_reflexao": "A terapia, ao contrário do que muitos pensam, não fornece respostas prontas mas cria um caminho de autoconhecimento. É como se fosse um gps: te ajuda a se localizar, entender onde está e escolher para onde deseja ir!",
+  "servicos": [
+    {
+      "titulo": "Um refúgio para parar de correr",
+      "descricao": "Um lugar seguro para pausar o peso de tentar dar conta de tudo e de um mundo hiperestimulado"
+    },
+    {
+      "titulo": "Escuta real e sem julgamentos",
+      "descricao": "Um espaço onde você pode ser ouvida na sua inteireza, longe de fórmulas prontas ou conselhos superficiais."
+    },
+    {
+      "titulo": "Profundidade e respeito ao seu ritmo",
+      "descricao": "Uma terapia que acolhe a sua experiência real, sem te encaixar em caixinhas."
+    },
+    {
+      "titulo": "Um solo seguro para desabrochar",
+      "descricao": "Onde a sua dor tem espaço para existir, ser compreendida e processada no seu próprio tempo."
+    }    
+  ],
+  "modalidades_info": [
+    {
+      "titulo": "Atendimento Online",
+      "descricao": "Os atendimentos realizados de maneira online proporcionam a mesma eficácia e qualidade das sessões presenciais, realizados por videoconferência. Conduzidas em ambientes escolhidos por você, a distância física entre paciente e psicóloga não interfere."
+    },
+    {
+      "titulo": "Atendimento Presencial",
+      "descricao": "Meu consultório fica em São José dos Campos e realizo sessões somente com hora marcada. Entre em contato para marcar um horário. Endereço: R. Santa Elza, 261 - Vila Adyana, São José dos Campos - SP, 12243-690, Brasil"
+    }    
+  ],
+  "passos_processo": [
+    {
+      "numero": "01",
+      "titulo": "PRIMEIRO ATENDIMENTO",
+      "descricao": "No atendimento inicial, é realizada uma escuta clínica qualificada. Eu avalio as suas necessidades e explico como funcionam as sessões de psicoterapia."
+    },
+    {
+      "numero": "02",
+      "titulo": "FREQUÊNCIA E DURAÇÃO",
+      "descricao": "As sessões de psicoterapia duram 50 minutos e acontecem ao menos uma vez por semana, conforme a necessidade de cada caso. A psicanálise depende de encontros frequentes para que os conteúdos inconscientes possam emergir, se repetir e serem trabalhados ao longo do tempo. "
+    },
+    {
+      "numero": "03",
+      "titulo": "A ABORDAGEM PSICANALÍTICA",
+      "descricao": "A psicanálise não segue fórmulas prontas nem oferece conselhos. O objetivo é desenvolver, ao longo das sessões, um espaço de confiança em que você possa falar de si e elaborar sintomas, questões profundas, e pensamentos repetitivos que se manifestam na sua vida."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Qual é a duração do tratamento?",
+      "resposta": "A duração da terapia não é fixa, pois varia de acordo com o perfil de cada pessoa, seu envolvimento com o processo terapêutico e as demandas que surgem ao longo do percurso."
+    },
+    {
+      "pergunta": "Quais são as formas de pagamento disponíveis?",
+      "resposta": "Ofereço as seguintes opções: PIX, boleto, cartão de crédito, Paypall e transferência bancária."
+    },
+    {
+      "pergunta": "Como agendar consulta online?",
+      "resposta": "Para consulta online, é necessário que semanalmente você esteja em um ambiente privado, silencioso e com bom acesso à internet. Entre em contato pelo WhatsApp e fale diretamente comigo para combinarmos horários e condições."
+    }
+  ],
+  "contato_texto": "Agende uma consulta e se permita dar o primeiro passo para uma vida mais leve.",
+  "tipo_agendamento": "whatsapp",
+  "link_agendamento": "https://www.instagram.com/psico.elainediniz/",
+  "whatsapp": "5512974074303",
+  "whatsapp_mensagem": "Olá, Elaine! Vim pelo site e gostaria de agendar um atendimento.",
+  "instagram": "psico.elainediniz",
+  "og_image": "/og-elaine.jpg",
+  "imagens": {
+    "hero": {
+      "desktop": "/images/hero-elaine-desktop.webp",
+      "mobile": "/images/hero-elaine-mobile.webp",
+      "arquivo": "/images/hero-elaine-mobile.webp",
+      "alt": "Retrato de Elaine Diniz, Psicóloga Clínica",
+      "obrigatoria": false
+    },
+    "sobre": {
+      "arquivo": "/images/sobre.webp",
+      "alt": "Elaine Diniz em foto profissional",
+      "obrigatoria": false
+    }
+  },
+  "blocos_texto": {
+    "hero_identificacao": {
+      "arredondado": false,
+      "tracejado": true
+    },
+    "hero_bio_1": {
+      "arredondado": true,
+      "tracejado": false
+    },
+    "hero_bio_2": {
+      "arredondado": true,
+      "tracejado": false
+    },
+    "por_que_checklist": {
+      "arredondado": true,
+      "tracejado": false
+    },
+    "por_que_reflexao": {
+      "arredondado": false,
+      "tracejado": true
+    },
+    "abordagem_citacao": {
+      "arredondado": false,
+      "tracejado": true
+    },
+    "abordagem_nota": {
+      "arredondado": true,
+      "tracejado": false
+    },
+    "como_funciona_passos": {
+      "arredondado": false,
+      "tracejado": true
+    },
+    "mini_cta_balao": {
+      "arredondado": false,
+      "tracejado": true
+    },
+    "faq_itens": {
+      "arredondado": true,
+      "tracejado": false
+    },
+    "contato_card": {
+      "arredondado": true,
+      "tracejado": false
+    }
+  }
+}

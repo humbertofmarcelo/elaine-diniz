@@ -1,0 +1,20 @@
+---
+// Tokens: inline-block, bg-primary, bg-primary-dark, bg-surface, bg-surface-alt, text-white, text-ink, text-ink-light, rounded-button, px-6, py-4, font-medium, hover:bg-primary-dark, hover:bg-surface-card, md:bg-surface-alt, md:text-ink, md:hover:bg-surface-card, md:bg-surface, md:text-ink-light, md:bg-primary, md:text-white
+// cliente.json: tipo_agendamento, link_agendamento, whatsapp, whatsapp_mensagem
+// Props: rotulo (texto do botão), href (sobrescrever URL), tipo ("whatsapp" | "link"), variante, varianteMobile, varianteDesktop, comIcone (boolean), icone (string)
+import BotaoWhatsapp from "./BotaoWhatsapp.astro";
+
+interface Props {
+  rotulo?: string;
+  href?: string;
+  tipo?: "whatsapp" | "link";
+  variante?: "normal" | "light" | "dark";
+  varianteMobile?: "normal" | "light" | "dark";
+  varianteDesktop?: "normal" | "light" | "dark";
+  comIcone?: boolean;
+  icone?: string;
+}
+
+const props = Astro.props;
+---
+<BotaoWhatsapp {...props} />

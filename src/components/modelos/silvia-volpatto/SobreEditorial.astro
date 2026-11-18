@@ -1,0 +1,44 @@
+---
+// Tokens: -mx-6, -mt-16, mb-8, md:mx-0, md:mt-0, md:mb-0, flex, justify-center, md:rounded-card, md:border, md:border-line, object-cover, w-full, md:max-w-sm, md:shadow-sm, block, text-ink, text-ink-soft, text-sm, text-base, text-balance, texto-titulo, mt-2, mt-6, space-y-4, uppercase, tracking-wider, leading-relaxed, md:grid, md:grid-cols-2, md:gap-12, md:items-center
+// cliente.json: nome, bio, bio_complementar, imagens.sobre
+import Section from "../../ui/Section.astro";
+import cliente from "../../../content/cliente.json";
+
+const sobreImg = cliente.imagens?.sobre;
+const fotoSobre = sobreImg?.arquivo || (sobreImg as any)?.desktop || (sobreImg as any)?.mobile;
+const temImagem = Boolean(fotoSobre);
+---
+<Section id="sobre" tom="alt" largura="ampla">
+  <div class={temImagem ? "md:grid md:grid-cols-2 md:gap-12 md:items-center" : ""}>
+    {temImagem && (
+      <div class="-mx-6 -mt-16 mb-8 md:mx-0 md:mt-0 md:mb-0 flex justify-center">
+        <img
+          src={fotoSobre}
+          alt={sobreImg?.alt || `Sobre ${cliente.nome}`}
+          class="md:rounded-card md:border md:border-line object-cover w-full md:max-w-sm md:shadow-sm block"
+          loading="lazy"
+        />
+      </div>
+    )}
+
+    <div>
+      <p class="text-sm text-ink-soft uppercase tracking-wider">
+        Prazer, eu sou
+      </p>
+      <h2 class="texto-titulo text-ink text-balance mt-2">
+        {cliente.nome}
+      </h2>
+
+      <div class="mt-6 space-y-4 text-base text-ink-soft leading-relaxed">
+        <p>
+          {cliente.bio}
+        </p>
+        {cliente.bio_complementar && (
+          <p>
+            {cliente.bio_complementar}
+          </p>
+        )}
+      </div>
+    </div>
+  </div>
+</Section>

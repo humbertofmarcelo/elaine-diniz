@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import site from "../config/site.json";
+import cliente from "../content/cliente.json";
+import { obterComponenteSecao } from "../components/registry";
+import { resolverModelo } from "../config/modelos";
+
+interface SecaoConfig {
+  id: string;
+  tipo: string;
+  variante?: string;
+  [key: string]: any;
+}
+
+// 1. Resolve o modelo ativo (definido no cliente.json, ou fallback em site.json)
+const modeloId = (cliente as any).modelo || (site as any).modelo || "silvia-volpatto";
+const modelo = resolverModelo(modeloId);
+
+// 2. Configurações globais de Hero fornecidas diretamente no cliente.json
+const clienteHero = (cliente as any).hero || (cliente as any).hero_config || {};
+
+// 3. Determina a lista de seções a renderizar (permite sobrescrita no cliente.json ou usa o padrão do modelo)
+const secoesOriginais: SecaoConfig[] = (cliente as any).secoes ?? modelo.secoes;
+
+const colecaoAtiva = modelo.colecaoPadrao || "editorial";
+
+// 4. Mapeia e injeta configurações de liberdade (como Hero mobile/desktop do item 6)
+const secoes = secoesOriginais
+  .map((item) => {
+    let itemConfig = { ...item };
+
+    // Se for a seção Hero (tipo "hero", "hero-*" ou id "inicio"), injeta opções de liberdade
+    const ehHero = item.tipo.startsWith("hero") || item.id === "inicio";
+    if (ehHero) {
+      if (clienteHero.variante) {
+        itemConfig.variante = clienteHero.variante;
+      }
+      itemConfig.mobile = {
+        ...(item.mobile || {}),
+        ...(clienteHero.mobile || {}),
+      };
+      itemConfig.desktop = {
+        ...(item.desktop || {}),
+        ...(clienteHero.desktop || {}),
+      };
+    }
+
+    const Componente = obterComponenteSecao(colecaoAtiva, itemConfig.tipo, itemConfig.variante);
+
+    return {
+      id: itemConfig.id,
+      tipo: itemConfig.tipo,
+      Componente,
+      config: itemConfig,
+    };
+  })
+  .filter((item) => item.Componente !== null);
+---
+
+<Base>
+  <main>
+    {secoes.map(({ id, Componente, config }) => (
+      <Componente id={id} {...config} />
+    ))}
+  </main>
+</Base>
